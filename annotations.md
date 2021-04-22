@@ -91,3 +91,12 @@ iex -S mix // compila
 
 ## tupla
 {sucesso_ou_erro, resultado_da_operação} // facilita no fluxo de execução
+
+<!-- 2 -->
+Ecto: com BD
+``
+mix ecto.gen.migration <nome_migration>
+mix ecto.gen.migration create_restaurants_table
+mix ecto.migrate
+
+``

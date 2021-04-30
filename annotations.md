@@ -95,8 +95,14 @@ iex -S mix // compila
 <!-- 2 -->
 Ecto: com BD
 ``
-mix ecto.gen.migration <nome_migration>
 mix ecto.gen.migration create_restaurants_table
 mix ecto.migrate
 
+<!-- 3 -->
+mix ecto.gen.migration create_supplies_table
+mix ecto.migrate
+<!-- 2 juntos -->
+iex -S mix phx.server
 ``
+
+Inmana.Supplies.ExpirationNotification.send()
